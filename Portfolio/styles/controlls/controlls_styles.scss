@@ -1,0 +1,37 @@
+
+
+.controlls {
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    right: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-50%);
+
+    .active-button {
+        background-color: var(--color-activeButton) !important;
+        transition: all var(--default-animation-duration) ease-in-out;
+
+        i {}
+    }
+
+    .control {
+        padding: 1rem;
+        cursor: pointer;
+        background-color: var(--color-button-section-holder);
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.7rem;
+
+        i {
+            font-size: 1.2rem;
+            pointer-events: none;
+        }
+    }
+}
