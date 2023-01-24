@@ -1,0 +1,120 @@
+.contact-content-con {
+    display: flex;
+    padding-top: 3.5rem;
+
+    .left-contact {
+        flex: 2;
+        margin-right: 2rem;
+        margin-left: 5rem;
+        margin-top: 1rem;
+
+        .contact-info {
+            .contact-item {
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                background-color: var(--color-transparentBackground-1);
+                margin-top: 5px;
+                margin-bottom: 5px;
+                padding: 15px;
+                border-radius: 15px;
+            }
+
+            i {
+                margin-right: 15px;
+            }
+        }
+
+        .contact-icon {
+            display: flex;
+            margin-top: 2rem;
+
+            a {
+                display: flex;
+                align-items: center;
+                color: var(--color-white);
+                background-color: var(--color-transparentBackground-1);
+                cursor: pointer;
+                justify-content: center;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin: 0 .4rem;
+                transition: all .4s ease-in-out;
+
+                &:hover {
+                    background-color: var(--color-secondary);
+
+                    i {
+                        color: var(--color-primary);
+                    }
+                }
+
+                i {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
+    .right-contact {
+        flex: 3;
+        margin-left: 3rem;
+
+        .input-control {
+            margin: 1.5rem 0;
+
+            input,
+            textarea {
+                border-radius: 30px;
+                font-weight: inherit;
+                font-size: inherit;
+                font-family: inherit;
+                padding: .8rem 1.1rem;
+                outline: none;
+                border: none;
+                background-color: var(--color-transparentBackground-1);
+                width: 100%;
+                color: var(--color-white);
+                resize: none;
+            }
+        }
+
+        .i-c-2 {
+            display: flex;
+
+            :last-child {
+                margin-left: 1.5rem;
+            }
+        }
+
+        .submit-btn {
+            border-radius: 30px;
+            color: inherit;
+            font-weight: 600;
+            position: relative;
+            border: 1px solid var(--color-secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .btn-text {
+                padding: 1rem;
+                font-size: 1.5rem;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                transform: translateX(100%);
+                transition: all .4s ease-out;
+                z-index: -1;
+            }
+        }
+    }
+}

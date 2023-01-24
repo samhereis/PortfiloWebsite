@@ -1,193 +1,479 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samagan Davlatbek uulu</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles/styles.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body class="main-content">
-
-    <!-- --- Main Page Start -->
-
-    <header class="section home-section header active" id="home">
+    <header class="container header active" id="home">
         <div class="header-content">
             <div class="left-header">
-                <div class="header-shape">
-                    <div class="image">
-                        <img src="img/avatar.jpg" alt="">
-                    </div>
+                <div class="h-shape"></div>
+                <div class="image">
+                    <img src="img/avatar.jpg" alt="">
                 </div>
             </div>
-
             <div class="right-header">
                 <h1 class="name">
-                    I am <span>Davlatbek uulu Samagan</span>
-                    A Unity Developer.
+                    Hi, I am Davlatbek uulu Samagan.
                 </h1>
-                <p> Creating games with passion because i am a gamer myself! </p>
-
-                <div class="button-container">
+                <span>
+                    A Unity Developer.</span>
+                <p>
+                    Making games with love because I am a gamer myself!
+                </p>
+                <div class="btn-con">
                     <a href="https://vk.com/doc242430696_657834478?hash=6LEDClX5ex4ExG1WUEzwBqc9WFAJJh26VMZ9Zx5OCQD&dl=CqcyfJkPsZWACHVHGQ0PuMoGvnjKx2EUgoyvHz1tZqz"
-                        class="main-button">
-                        <span class="button-text"> View CV </span>
-                        <span class="button-icon"><i class="fas fa-download"></i></span>
+                        target="_blank" class="main-btn">
+                        <span class="btn-text">Download CV</span>
+                        <span class="btn-icon"><i class="fas fa-download"></i></span>
                     </a>
                 </div>
             </div>
         </div>
     </header>
-
-    <!-- --- Main Page End -->
-
     <main>
-
-        <!-- --- Abount me page Start -->
-
-        <section class="section about-section about" id="about">
+        <section class="container about" id="about">
             <div class="main-title">
-                <h2>About <span>me</span>
-                    <span class="background-text">My stats</span>
-                </h2>
+                <h2>About me</h2>
             </div>
-
             <div class="about-container">
-                <div class="left-about">
-                    <div>
-                        <h4>Info about me</h4>
-
-                        <p>
-                            Info goes here Info goes here Info goes here Info goes here Info goes here
-                            Info goes here Info goes here Info goes here Info goes here Info goes here
-                            Info goes here Info goes here Info goes here Info goes here Info goes here
-                            Info goes here Info goes here Info goes here Info goes here Info goes here
-                        </p>
-
-                        <div class="button-container">
-                            <a href="https://vk.com/doc242430696_657834478?hash=6LEDClX5ex4ExG1WUEzwBqc9WFAJJh26VMZ9Zx5OCQD&dl=CqcyfJkPsZWACHVHGQ0PuMoGvnjKx2EUgoyvHz1tZqz"
-                                class="main-button">
-                                <span class="button-text"> View CV </span>
-                                <span class="button-icon"><i class="fas fa-download"></i></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="right-about">
                     <div class="about-item">
-                        <div class="aboutMe-text">
-                            <p class="large-text">560+</p>
-                            <p class="small-text">Games released</p>
+                        <div class="abt-text">
+                            <p class="large-text">2></p>
+                            <p class="small-text"> years of experience in various genres</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">5</p>
+                            <p class="small-text">Completed projects</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">2016</p>
+                            <p class="small-text">First time openned Unity in 2016</p>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <h4 class="stat-title">My Skills</h4>
 
             <div class="about-stats">
-                <h4 class="stat-title">My Skills</h4>
 
-                <div class="progress-bars">
-
-                    <div class="progress-bar">
-                        <p class="progress-title">Addressables</p>
-                        <div class="progress-container">
-                            <p class="progress-text">90%</p>
-                            <div class="progress">
-                                <span class="Addressables"></span>
-                            </div>
-                        </div>
+                <div class="skill-container">
+                    <div class="skill-dot">
+                        <div class="dot"></div>
                     </div>
-                    <div class="progress-bar">
-                        <p class="progress-title">Photon Networking</p>
-                        <div class="progress-container">
-                            <p class="progress-text">90%</p>
-                            <div class="progress">
-                                <span class="photonn-networking"></span>
-                            </div>
-                        </div>
+                    <p class="skill-text">Unity Engine/C#</p>
+                </div>
+                <div class="skill-container">
+                    <div class="skill-dot">
+                        <div class="dot"></div>
                     </div>
-                    <div class="progress-bar">
-                        <p class="progress-title">AI</p>
-                        <div class="progress-container">
-                            <p class="progress-text">90%</p>
-                            <div class="progress">
-                                <span class="ai"></span>
-                            </div>
-                        </div>
+                    <p class="skill-text">Game optimization</p>
+                </div>
+                <div class="skill-container">
+                    <div class="skill-dot">
+                        <div class="dot"></div>
                     </div>
-                    <div class="progress-bar">
-                        <p class="progress-title">UI</p>
-                        <div class="progress-container">
-                            <p class="progress-text">90%</p>
-                            <div class="progress">
-                                <span class="ui"></span>
-                            </div>
-                        </div>
+                    <p class="skill-text">Clean code/OOP/Design patterns</p>
+                </div>
+                <div class="skill-container">
+                    <div class="skill-dot">
+                        <div class="dot"></div>
                     </div>
+                    <p class="skill-text">Photon multiplayer</p>
+                </div>
+                <div class="skill-container">
+                    <div class="skill-dot">
+                        <div class="dot"></div>
+                    </div>
+                    <p class="skill-text">Particle system</p>
+                </div>
+                <div class="skill-container">
+                    <div class="skill-dot">
+                        <div class="dot"></div>
+                    </div>
+                    <p class="skill-text">DI</p>
+                </div>
+                <div class="skill-container">
+                    <div class="skill-dot">
+                        <div class="dot"></div>
+                    </div>
+                    <p class="skill-text">Architecture</p>
+                </div>
+                <div class="skill-container">
+                    <div class="skill-dot">
+                        <div class="dot"></div>
+                    </div>
+                    <p class="skill-text">Localization</p>
+                </div>
+                <div class="skill-container">
+                    <div class="skill-dot">
+                        <div class="dot"></div>
+                    </div>
+                    <p class="skill-text">Addressables</p>
+                </div>
+                <div class="skill-container">
+                    <div class="skill-dot">
+                        <div class="dot"></div>
+                    </div>
+                    <p class="skill-text">Music vizuaization</p>
+                </div>
+                <div class="skill-container">
+                    <div class="skill-dot">
+                        <div class="dot"></div>
+                    </div>
+                    <p class="skill-text">Blender</p>
+                </div>
+                <div class="skill-container">
+                    <div class="skill-dot">
+                        <div class="dot"></div>
+                    </div>
+                    <p class="skill-text">Photoshop</p>
                 </div>
 
             </div>
-
             <h4 class="stat-title">My Timeline</h4>
-
-            <div class="timeline-container">
+            <div class="timeline">
                 <div class="timeline-item">
-
-                    <div class="timeline-icon">
+                    <div class="tl-icon">
                         <i class="fas fa-briefcase"></i>
                     </div>
-
-                    <p class="tl-duration">February 2021 - August 2021</p>
+                    <p class="tl-duration">January 2022 - January 2023</p>
+                    <h5>Unity Developer<span> - BG Games</span></h5>
+                    <p>
+                        Cooperate with Game Designers, 3D artists and UI Designers to develop games in various
+                        genres (RTS, 2D, 3D Runner). Writing clean code and documentation. Working with Firebase,
+                        Google Admobs and Unity Localization. Writing AI for mobs, creating complex UI and complex
+                        Sound System . Managing assets with Addressables and making client-server requests for an
+                        NFT game.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">September 2021 - January 2022</p>
+                    <h5>Unity Developer<span> - Square Dino</span></h5>
+                    <p>
+                        Developing Hyper Casual game prototypes in a period of 2-4 weeks and maintaining them.
+                        Worked with Object Fracturing (destructible environments), Pathfinding, Game Analytics and a
+                        lot more
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <p class="tl-duration">January 2021 - August 2022</p>
                     <h5>Unity Developer<span> - Indie Game Developer</span></h5>
                     <p>
-                        Job Desciption Job Desciption Job Desciption Job Desciption Job Desciption Job Desciption
-                        Job Desciption Job Desciption Job Desciption Job Desciption Job Desciption Job Desciption
-                        Job Desciption Job Desciption Job Desciption Job Desciption Job Desciption Job Desciption
-                        Job Desciption Job Desciption Job Desciption Job Desciption Job Desciption Job Desciption
-                        Job Desciption Job Desciption Job Desciption Job Desciption Job Desciption Job Desciption
-                        Job Desciption Job Desciption Job Desciption Job Desciption Job Desciption Job Desciption
+                        Worked as an Indie Game Developer making my game on steam "Don't Hate My Music
+                        Taste".
                     </p>
                 </div>
             </div>
-
         </section>
+        <section class="container" id="portfolio">
+            <div class="main-title">
+                <h2>My Portfolio</h2>
+            </div>
+            <p class="port-text">
+                Here is the list of my works.
+            </p>
+            <div class="portfolios">
 
-        <!-- --- Abount me page Start -->
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/projects/LeoKings.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <div class="top-part">
+                            <h3>Leo Kings</h3>
+                        </div>
+                        <div class="bottom-part">
+                            <div class="icons">
+                                <a href="https://leokings.io" target="_blank">
+                                    <i class="icon fab fa-github"></i>
+                                </a>
+                                <a href="https://play.google.com/store/apps/details?id=com.JangaLabs.LeoKings"
+                                    target="_blank">
+                                    <i class="icon fab fa-google-play"></i>
+                                </a>
+                                <a href="https://apps.apple.com/us/app/leo-kings/id6443674158?platform=iphone"
+                                    target="_blank">
+                                    <i class="icon fab fa-apple"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/projects/Metamonopoly.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <div class="top-part">
+                            <h3>Metamonopoly</h3>
+                        </div>
+                        <div class="bottom-part">
+                            <div class="icons">
+                                <a href="https://opensea.io/collection/meta-monopoly" target="_blank">
+                                    <i class="icon fab fa-internet-explorer"></i>
+                                </a>
+                                <a href="https://tres-poli.github.io/" target="_blank">
+                                    <i class="icon fab fa-google-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/projects/OneGrainz.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <div class="top-part">
+                            <h3>One Grainz</h3>
+                        </div>
+                        <div class="bottom-part">
+                            <div class="icons">
+                                <a href="https://www.one-grain.co.uk/" target="_blank">
+                                    <i class="icon fab fa-internet-explorer"></i>
+                                </a>
+                                <a href="https://play.google.com/store/apps/details?id=com.BgGames.OneGrainz&hl=en_US&gl=US"
+                                    target="_blank">
+                                    <i class="icon fab fa-google-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/projects/CraftAndDefense.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <div class="top-part">
+                            <h3>Craft $ Defense</h3>
+                        </div>
+                        <div class="bottom-part">
+                            <div class="icons">
+                                <a href="https://play.google.com/store/apps/details?id=com.VladimirShamsheev.CraftAndDefence"
+                                    target="_blank">
+                                    <i class="icon fab fa-google-play"></i></a></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/projects/KickGoal.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <div class="top-part">
+                            <h3>Kick Goal</h3>
+                        </div>
+                        <div class="bottom-part">
+                            <div class="icons">
+                                <a href="https://play.google.com/store/apps/details?id=com.wannaplay.drawfootball"
+                                    target="_blank">
+                                    <i class="icon fab fa-google-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/projects/SlayerStrike.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <div class="top-part">
+                            <h3>Slayer Strike</h3>
+                        </div>
+                        <div class="bottom-part">
+                            <div class="icons">
+                                <a href="https://play.google.com/store/apps/details?id=slayer.strike.sword"
+                                    target="_blank">
+                                    <i class="icon fab fa-google-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/projects/MergeSuperheroes.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <div class="top-part">
+                            <h3>Merge Superheroes</h3>
+                        </div>
+                        <div class="bottom-part">
+                            <div class="icons">
+                                <a href="https://play.google.com/store/apps/details?id=merge.superheroes.evolution"
+                                    target="_blank">
+                                    <i class="icon fab fa-google-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/projects/WallShooting.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <div class="top-part">
+                            <h3>Wall Shooting</h3>
+                        </div>
+                        <div class="bottom-part">
+                            <div class="icons">
+                                <a href="https://play.google.com/store/apps/details?id=wall.shoot.squid"
+                                    target="_blank">
+                                    <i class="icon fab fa-google-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
 
-        <section class="section portfolio-section portfolio" id="portfolio">
+            <div class="main-title" style="margin-top: 5rem;">
+                <h2>My personal projects</h2>
+            </div>
+            <p class="port-text">
+                Here is the list of my personal projects
+            </p>
+            <div class="portfolios">
 
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/projects/DHMMT.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <div class="top-part">
+                            <h3>Don't Hate My Music Taste</h3>
+                        </div>
+                        <div class="bottom-part">
+                            <div class="icons">
+                                <a href="https://store.steampowered.com/app/1724070/Dont_Hate_My_Music_Taste/"
+                                    target="_blank">
+                                    <i class="icon fab fa-steam"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
+        <section class="container contact" id="contact">
+            <div class="contact-container">
+                <div class="main-title">
+                    <h2>Contact me</h2>
+                </div>
+                <div class="contact-content-con">
+                    <div class="left-contact">
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>samagan888@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-user-graduate"></i>
+                                <span>Associate's in "Programming in computer systems</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+996755000448</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-globe-asia"></i>
+                                <span>Proficient: English, Kyrgyz, Russian</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-globe-europe"></i>
+                                <span>Limited: French, Turkish</span>
+                            </div>
+                        </div>
+                        <div class="contact-icons">
+                            <div class="contact-icon">
+                                <a href="https://t.me/samhereis" target="_blank">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                                <a href="https://www.instagram.com/samhereis/" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://github.com/samhereis" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/samhereis/" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-contact">
+                        <form action="" class="contact-form">
+                            <div class="input-control i-c-2">
+                                <input type="text" required placeholder="Your name">
+                                <input type="email" required placeholder="Your email">
+                            </div>
+                            <div class="input-control">
+                                <input type="text" required placeholder="Enter subject">
+                            </div>
+                            <div class="input-control">
+                                <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                            </div>
 
-        <section class="section contacts-section contacts" id="contacts">
-
+                            <a href="#" class="submit-btn">
+                                <span class="btn-text">Submit</span>
+                            </a>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <div class="controlls">
-        <div class="control home-control active-button" data-id="home">
-            <i class="fa-solid fa-house-user"></i>
+    <div class="controls">
+        <div class="control active-btn" data-id="home">
+            <i class="fas fa-home"></i>
         </div>
-        <div class="control about-control" data-id="about">
-            <i class="fa-solid fa-address-card"></i>
+        <div class="control" data-id="about">
+            <i class="fas fa-user"></i>
         </div>
-        <div class="control portfolio-control" data-id="portfolio">
-            <i class="fa-solid fa-business-time"></i>
+        <div class="control" data-id="portfolio">
+            <i class="fas fa-briefcase"></i>
         </div>
-        <div class="control contacts-control" data-id="contacts">
-            <i class="fa-solid fa-address-book"></i>
+        <div class="control" data-id="contact">
+            <i class="fas fa-envelope-open"></i>
         </div>
     </div>
-
-    <script src="js/app.js"></script>
+    <div class="theme-btn">
+        <i class="fas fa-adjust"></i>
+    </div>
+    <script src="app.js"></script>
 </body>
 
 </html>

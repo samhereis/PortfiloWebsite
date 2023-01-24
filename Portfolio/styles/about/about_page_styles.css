@@ -1,160 +1,109 @@
-.main-title {
-  text-align: center;
-}
-.main-title h2 {
-  position: relative;
-  text-transform: uppercase;
-  font-size: 4rem;
-  font-weight: 700;
-}
-.main-title h2 span {
-  color: var(--color-secondary);
-}
-.main-title h2 .background-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: var(--color-grey-1);
-  transition: all var(--default-animation-duration) ease-out;
-  z-index: -1;
-  transform: translate(-50%, -50%);
-  font-weight: 800;
-  font-size: 6.3rem;
-}
-
 .about-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
   padding-top: 3.5rem;
   padding-bottom: 5rem;
 }
 .about-container .right-about {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
 }
 .about-container .right-about .about-item {
-  border: 1px solid var(--color-grey-1);
+  border: 1px solid var(--color-grey-5);
   border-radius: 5px;
-  transition: 1px, var(--default-animation-duration) ease-in-out;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
 }
 .about-container .right-about .about-item:hover {
   cursor: default;
   transform: translateY(-5px);
   border: 1px solid var(--color-secondary);
+  box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
 }
-.about-container .right-about .about-item .aboutMe-text {
+.about-container .right-about .about-item .abt-text {
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
 }
-.about-container .right-about .about-item .aboutMe-text .large-text {
+.about-container .right-about .about-item .abt-text .large-text {
   font-size: 3rem;
   font-weight: 700;
+  color: var(--color-secondary);
 }
-.about-container .right-about .about-item .aboutMe-text .small-text {
+.about-container .right-about .about-item .abt-text .small-text {
   padding-left: 3rem;
   position: relative;
   text-transform: uppercase;
+  font-size: 1.2rem;
+  color: var(--color-grey-1);
   letter-spacing: 2px;
 }
-.about-container .right-about .about-item .aboutMe-text .small-text::before {
+.about-container .right-about .about-item .abt-text .small-text::before {
   content: "";
   position: absolute;
   left: 0;
   top: 15px;
   width: 2rem;
   height: 2px;
-  background-color: var(--color-grey-1);
+  background-color: var(--color-grey-5);
 }
-.about-container .left-about {
-  padding-right: 5rem;
-  padding-left: 5rem;
+
+.about-stats {
+  padding-bottom: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
 }
-.about-container .left-about p {
-  line-height: 2rem;
-  padding: 1rem;
+.about-stats .skill-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  display: grid;
+  grid-template-columns: repeat(2, 5% 95%);
+  grid-gap: 2rem;
 }
-.about-container .left-about h4 {
-  font-size: 2rem;
-  text-transform: uppercase;
+.about-stats .skill-container .skill-dot {
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-secondary);
+  border-radius: 50%;
+}
+.about-stats .skill-container .skill-text {
+  text-align: start;
 }
 
 .stat-title {
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   text-align: center;
   padding: 3.5rem 0;
   position: relative;
 }
 .stat-title::before {
   content: "";
+  position: absolute;
   left: 50%;
   top: 0;
-  width: 50%;
+  width: 40%;
   height: 1px;
+  background-color: var(--color-grey-5);
   transform: translateX(-50%);
 }
 
-.about-stats {
-  padding-bottom: 4rem;
-  padding-left: 10rem;
-  padding-right: 10rem;
-}
-.about-stats .progress-bars {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
-}
-.about-stats .progress-bars .progress-bar {
-  display: flex;
-  flex-direction: column;
-}
-.about-stats .progress-bars .progress-bar .progress-title {
-  text-transform: uppercase;
-  font-weight: 400;
-}
-.about-stats .progress-bars .progress-bar .progress-container {
-  display: flex;
-  align-items: center;
-}
-.about-stats .progress-bars .progress-bar .progress-container .progress-text {
-  color: var(--color-grey-2);
-}
-.about-stats .progress-bars .progress-bar .progress-container .progress {
-  width: 100%;
-  height: 0.45rem;
-  background-color: var(--color-progressBar-background);
-  margin-left: 1rem;
-  position: relative;
-}
-.about-stats .progress-bars .progress-bar .progress-container .progress span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background-color: var(--color-secondary);
-  transition: all var(--default-animation-duration) ease-in-out;
-  width: 60%;
-}
-
-.timeline-container {
-  background-color: brown;
+.timeline {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
   padding-bottom: 3rem;
-  padding-left: 10rem;
-  padding-right: 10rem;
 }
-.timeline-container .timeline-item {
+.timeline .timeline-item {
   position: relative;
   padding-left: 3rem;
-  border-left: 1px solid var(--color-grey-2);
 }
-.timeline-container .timeline-item .timeline-icon {
+.timeline .timeline-item .tl-icon {
   position: absolute;
-  left: -30px;
+  left: -27px;
   top: 0;
   background-color: var(--color-secondary);
   width: 50px;
@@ -164,21 +113,29 @@
   align-items: center;
   justify-content: center;
 }
-.timeline-container .timeline-item .timeline-icon i {
+.timeline .timeline-item .tl-icon i {
   font-size: 1.3rem;
 }
-.timeline-container .timeline-item .tl-duration {
+.timeline .timeline-item .tl-duration {
   padding: 0.2rem 0.6rem;
-  background-color: var(--color-grey-2);
+  background-color: var(--color-grey-5);
   border-radius: 15px;
   display: inline-block;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 500;
 }
-.timeline-container .timeline-item h5 {
+.timeline .timeline-item h5 {
   padding: 1rem 0;
   text-transform: uppercase;
   font-size: 1.3rem;
   font-weight: 600;
+}
+.timeline .timeline-item h5 span {
+  color: var(--color-grey-2);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.timeline .timeline-item p {
+  color: var(--color-grey-2);
 }/*# sourceMappingURL=about_page_styles.css.map */

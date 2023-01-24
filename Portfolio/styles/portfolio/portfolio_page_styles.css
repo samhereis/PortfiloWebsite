@@ -1,1 +1,89 @@
-/*# sourceMappingURL=portfolio_page_styles.css.map */
+.port-text {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.portfolios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+.portfolios .portfolio-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolios .portfolio-item .image {
+  width: 325px;
+  height: 325px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolios .portfolio-item .image img {
+  width: 75%;
+  height: 75%;
+  border-radius: 15px;
+}
+.portfolios .portfolio-item .hover-items {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.portfolios .portfolio-item .hover-items .top-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+.portfolios .portfolio-item .hover-items .top-part h3 {
+  width: 225px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: var(--color-transparentBackground-1);
+  font-size: 1.5;
+  color: var(--color-white);
+}
+.portfolios .portfolio-item .hover-items .bottom-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 50%;
+}
+.portfolios .portfolio-item .hover-items .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: var(--color-transparentBackground-2);
+}
+.portfolios .portfolio-item .hover-items .icons .icon {
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: all var(--default-animation-duration) ease-in-out;
+}
+.portfolios .portfolio-item .hover-items .icons .icon i {
+  font-size: 1.5rem;
+  color: var(--color-white);
+  margin: 0 1rem;
+}/*# sourceMappingURL=portfolio_page_styles.css.map */
