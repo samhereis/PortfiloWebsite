@@ -14,29 +14,4 @@ function Init() {
     })
 }
 
-
-function SendEmail(e) {
-    e.preventDefault();
-
-    const name = document.querySelector(".name");
-    const email = document.querySelector(".email");
-    const subject = document.querySelector(".subject");
-    const messsage = document.querySelector(".message");
-
-    console.log(name.value);
-
-    Email.send({
-        SecureToken: "3e1bb860-90af-4e20-85e7-f13a9216dced",
-        To: "samagan888@gmail.com",
-        From: email.value,
-        Subject: subject.value,
-        Body: messsage.value
-    }).then(
-        message => alert(message)
-    );
-}
-
 Init();
-
-console.log("addedsubmit");
-form.addEventListener("submit", SendEmail);
