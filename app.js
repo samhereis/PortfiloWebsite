@@ -19,8 +19,8 @@ function Init() {
 }
 
 
-function SendEmail(e) {
-    e.preventDefault();
+function SendEmail (){
+    //e.preventDefault();
 
     console.log(email.value);
     console.log(subject.value);
