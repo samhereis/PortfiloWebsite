@@ -12,6 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: start;
+  flex-direction: row;
   background-color: var(--color-transparentBackground-1);
   margin-top: 5px;
   margin-bottom: 5px;
@@ -23,15 +24,17 @@
 }
 .contact-content-con .left-contact .contact-icon {
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 2rem;
 }
 .contact-content-con .left-contact .contact-icon a {
   display: flex;
   align-items: center;
+  justify-content: center;
   color: var(--color-white);
   background-color: var(--color-transparentBackground-1);
   cursor: pointer;
-  justify-content: center;
   width: 50px;
   height: 50px;
   border-radius: 50%;

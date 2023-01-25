@@ -189,6 +189,7 @@ section {
   .right-header {
     grid-row: 1;
     padding-right: 0rem !important;
+    padding-left: 0rem !important;
     width: 90%;
     margin: 0 auto;
   }
@@ -321,7 +322,23 @@ section {
     grid-template-columns: repeat(2, 1fr);
   }
   .header-content .right-header {
-    padding-right: 9rem;
+    padding-right: 0rem !important;
+    padding-left: 1rem !important;
+    padding-bottom: 5rem !important;
+  }
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about-stats .skill-container {
+    grid-template-columns: repeat(2, 0 100%);
+    grid-gap: 1rem;
+  }
+  .skill-text {
+    font-size: 0.75rem;
+  }
+  .contact-content-con .left-contact {
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 }
 @media screen and (max-width: 660px) {
